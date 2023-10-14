@@ -1,75 +1,39 @@
-# Nuxt 3 Minimal Starter
+# ts-vant-starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+这是一个 `Vant` + `TailwindCSS` + `TypeScript` + `ESLint` + `Prettier` 的起手式
 
-## Setup
+`main`分支是以 Vite 为基础搭建的，`with-nuxt3`分支是以 Nuxt3 为基础搭建的
 
-Make sure to install the dependencies:
+## 使用
 
-```bash
-# npm
-npm install
-
-# pnpm
+```sh
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+### 开发模式
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+```sh
+pnpm dev
 ```
 
-## Production
+### 打包
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```sh
+pnpm build
 ```
 
-Locally preview production build:
+### 预览
 
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+```sh
+pnpm preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 相关文档
+
+- [Vant](https://vant-ui.github.io/vant/#/zh-CN)
+- [TypeScript](https://www.tslang.cn/)
+- [Vite](https://cn.vitejs.dev/)
+- [Nuxt3](https://nuxt.com.cn/)
+- [TailwindCSS](https://tailwind.nodejs.cn/)
+- [ESLint](https://eslint.nodejs.cn/)
+- [Prettier](https://prettier.nodejs.cn/)
