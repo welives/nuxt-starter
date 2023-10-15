@@ -12,6 +12,14 @@ pnpm install
 
 ### 开发模式
 
+生成环境变量文件，并填入项目所需信息
+
+```sh
+mv example.env .env
+```
+
+启动开发模式
+
 ```sh
 pnpm dev
 ```
