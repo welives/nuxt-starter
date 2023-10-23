@@ -1,11 +1,11 @@
 {
-  "name": "ts-nuxt-starter",
+  "name": "nuxt-starter",
   "description": "一个 Nuxt3 + TailwindCSS + TypeScript + ESLint + Prettier 的基础项目",
   "version": "1.0.0",
   "keywords": [
-    "vant",
-    "vue",
     "nuxt",
+    "vue",
+    "vant",
     "tailwind",
     "typescript",
     "eslint",

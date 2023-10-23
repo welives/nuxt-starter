@@ -4,5 +4,3 @@ dist
 .idea
 .vscode
 .nuxt
-*.md
-*.json

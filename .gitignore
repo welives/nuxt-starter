@@ -20,4 +20,4 @@ logs
 *.code-workspace
 
 # Local env files
-.env*
+.env*.local
