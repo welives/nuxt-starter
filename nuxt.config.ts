@@ -5,7 +5,13 @@ export default defineNuxtConfig({
   devServer: {
     port: isNaN(PORT) ? undefined : PORT,
   },
-  modules: ['@nuxt/devtools', '@nuxtjs/tailwindcss', '@vant/nuxt', ['@pinia/nuxt', { autoImports: ['defineStore'] }]],
+  modules: [
+    '@nuxt/devtools',
+    '@nuxtjs/tailwindcss',
+    '@vant/nuxt',
+    ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    '@pinia-plugin-persistedstate/nuxt',
+  ],
   devtools: { enabled: true },
   vant: { lazyload: true },
   imports: { dirs: ['./stores'] },

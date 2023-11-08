@@ -1,15 +1,15 @@
 {
   "name": "nuxt-starter",
-  "description": "一个 Nuxt3 + TailwindCSS + TypeScript + ESLint + Prettier 的基础项目",
+  "description": "开箱即用的基于Nuxt3 + Pinia + Vant + TailwindCSS + TypeScript的模板",
   "version": "1.0.0",
   "keywords": [
-    "nuxt",
-    "vue",
-    "vant",
-    "tailwind",
-    "typescript",
-    "eslint",
-    "prettier"
+    "Nuxt3",
+    "Pinia",
+    "Vant",
+    "TailwindCSS",
+    "TypeScript",
+    "ESLint",
+    "Prettier"
   ],
   "author": "welives",
   "license": "MIT",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.5",
     "@vant/nuxt": "^1.0.3",
