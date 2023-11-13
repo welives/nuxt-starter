@@ -32,6 +32,7 @@ pnpm preview
 
 - [Nuxt3](https://nuxt.com.cn/)
 - [Pinia](https://pinia.vuejs.org/zh/)
+- [pinia-plugin-persistedstate](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/)
 - [Vant](https://vant-ui.github.io/vant/#/zh-CN)
 - [TailwindCSS](https://tailwind.nodejs.cn/)
 - [TypeScript](https://www.tslang.cn/)
