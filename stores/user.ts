@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
-import { StorageSceneKey } from '../utils'
+import { StorageSceneKey } from '../libs'
 
 export const useUserStore = defineStore(
   'user',
@@ -19,7 +19,7 @@ export const useUserStore = defineStore(
   },
   {
     persist: {
-      //! 注意这里的key是当前这个Pinia模块进行缓存时的唯一key, 每个需要缓存的Pinia模块都必须分配一个唯一key
+      // ! 注意这里的key是当前这个Pinia模块进行缓存时的唯一key, 每个需要缓存的Pinia模块都必须分配一个唯一key
       key: StorageSceneKey.USER,
     },
   },

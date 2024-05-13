@@ -1,30 +1,43 @@
-import path from 'path'
-const PORT = parseInt(process.env.NUXT_APP_PORT as string)
+import { pwa } from './config/pwa'
+import { appDescription } from './constants/index'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devServer: {
-    port: isNaN(PORT) ? undefined : PORT,
-  },
+  devtools: { enabled: true },
   modules: [
-    '@nuxt/devtools',
+    '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
-    '@vant/nuxt',
+    '@nuxtjs/color-mode',
+    '@vueuse/nuxt',
+    '@vite-pwa/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
     '@pinia-plugin-persistedstate/nuxt',
   ],
-  devtools: { enabled: true },
-  vant: { lazyload: true },
   imports: { dirs: ['./stores'] },
-  postcss: {
-    plugins: {
-      'postcss-px-to-viewport-8-plugin': {
-        viewportWidth: (file: string) => {
-          return path.resolve(file).includes(path.join('node_modules', 'vant')) ? 375 : 750
-        },
-        unitPrecision: 6,
-        landscapeWidth: 1024,
-        // exclude: [/node_modules\/vant/i]
-      },
+  eslint: {
+    config: {
+      standalone: false,
     },
   },
+  colorMode: {
+    classSuffix: '',
+  },
+  app: {
+    head: {
+      viewport: 'width=device-width,initial-scale=1',
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      ],
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: appDescription },
+        { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
+        { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
+        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
+      ],
+    },
+  },
+  pwa,
 })
