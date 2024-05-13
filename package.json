@@ -1,7 +1,10 @@
 {
   "name": "nuxt-starter",
-  "description": "开箱即用的基于Nuxt3 + Pinia + TailwindCSS + TypeScript的模板",
+  "type": "module",
   "version": "1.0.0",
+  "description": "开箱即用的基于Nuxt3 + Pinia + TailwindCSS + TypeScript的模板",
+  "author": "welives",
+  "license": "MIT",
   "keywords": [
     "Nuxt3",
     "Pinia",
@@ -10,9 +13,6 @@
     "ESLint",
     "Prettier"
   ],
-  "author": "welives",
-  "license": "MIT",
-  "type": "module",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -22,6 +22,18 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.378.0",
+    "nuxt": "^3.11.2",
+    "radix-vue": "^1.7.4",
+    "shadcn-nuxt": "^0.10.4",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.17.0",
@@ -37,10 +49,5 @@
     "pinia": "^2.1.7",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.17"
-  },
-  "dependencies": {
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
   }
 }

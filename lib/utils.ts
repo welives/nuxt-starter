@@ -1,3 +1,10 @@
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
 interface AnyObj {
   [key: string]: any
 }
@@ -297,4 +304,4 @@ class Utils {
     return target
   }
 }
-export default Utils.instance
+export const utils = Utils.instance

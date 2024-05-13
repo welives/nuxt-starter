@@ -12,8 +12,13 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
     '@pinia-plugin-persistedstate/nuxt',
+    'shadcn-nuxt',
   ],
   imports: { dirs: ['./stores'] },
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui',
+  },
   eslint: {
     config: {
       standalone: false,
