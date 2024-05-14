@@ -27,6 +27,17 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
+  nitro: {
+    esbuild: {
+      options: {
+        target: 'esnext',
+      },
+    },
+    prerender: {
+      crawlLinks: false,
+      routes: ['/'],
+    },
+  },
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -44,5 +55,5 @@ export default defineNuxtConfig({
       ],
     },
   },
-  pwa,
+  pwa
 })

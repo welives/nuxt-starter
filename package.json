@@ -15,10 +15,13 @@
   ],
   "scripts": {
     "dev": "nuxt dev",
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "start": "node .output/server/index.mjs",
+    "start:generate": "npx serve .output/public",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit"
@@ -27,13 +30,9 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.378.0",
-    "nuxt": "^3.11.2",
     "radix-vue": "^1.7.4",
-    "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.17.0",
@@ -46,7 +45,11 @@
     "@vueuse/nuxt": "^10.9.0",
     "eslint": "^9.2.0",
     "eslint-plugin-format": "^0.1.1",
+    "nuxt": "^3.11.2",
     "pinia": "^2.1.7",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "shadcn-nuxt": "^0.10.4",
     "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.17"
