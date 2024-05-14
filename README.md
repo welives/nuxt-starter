@@ -1,6 +1,6 @@
 # nuxt-starter
 
-一个开箱即用的基于 `Nuxt3` + `Pinia` + `Vant` + `TailwindCSS` + `TypeScript` 的项目模板
+一个开箱即用的基于 `Nuxt3` + `Pinia` + `TailwindCSS` + `TypeScript` 的项目模板
 
 这个工程的搭建笔记可以[在这里查看](https://welives.github.io/blog/front-end/engineering/nuxt.html)
 
@@ -33,6 +33,7 @@ pnpm preview
 - [Nuxt3](https://nuxt.com.cn/)
 - [Pinia](https://pinia.vuejs.org/zh/)
 - [pinia-plugin-persistedstate](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/)
+- [Shadcn-vue](https://github.com/radix-vue/shadcn-vue)
 - [Vant](https://vant-ui.github.io/vant/#/zh-CN)
 - [TailwindCSS](https://tailwind.nodejs.cn/)
 - [TypeScript](https://www.tslang.cn/)

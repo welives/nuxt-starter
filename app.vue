@@ -1,5 +1,9 @@
+<script setup>
+import { cn } from './lib'
+</script>
+
 <template>
-  <div>
+  <div :class="cn('debug-screens')">
     <NuxtWelcome />
   </div>
 </template>

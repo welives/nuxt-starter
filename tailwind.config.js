@@ -15,6 +15,10 @@ module.exports = {
     './nuxt.config.{js,ts}',
   ],
   theme: {
+    debugScreens: {
+      position: ['bottom', 'right'],
+      ignore: ['dark'],
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -93,5 +97,5 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  plugins: [animate],
+  plugins: [process.env.NODE_ENV === 'development' && require('tailwindcss-debug-screens'), animate],
 }
