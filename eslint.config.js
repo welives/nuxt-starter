@@ -3,6 +3,7 @@ import withNuxt from './.nuxt/eslint.config.mjs'
 
 export default withNuxt(
   antfu({
+    ignores: ['node_modules', '**/node_modules/**', 'dist', '**/dist/**', '.nuxt', '**/.nuxt/**'],
     formatters: true,
     typescript: true,
     vue: true,

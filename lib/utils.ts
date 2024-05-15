@@ -171,7 +171,7 @@ class Utils {
   trim = (str: string) =>
     str.trim
       ? str.trim()
-      : str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '')
+      : str.replace(/^\s+|\s+$/g, '')
 
   /** @description 去除字符串中的 BOM */
   stripBOM = (content: string) => {
