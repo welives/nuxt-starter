@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web_app: #服务名
+    build: # 使用Dockerfile构建镜像
+      context: . # 指定 Dockerfile 所在目录
+      dockerfile: Dockerfile # 指定 Dockerfile 文件名
+    image: nuxt-app # 镜像名称
+    container_name: nuxt-app # 容器名称
+    restart: always # 自动重启
+    ports:
+      - 5000:80
