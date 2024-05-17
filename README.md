@@ -54,6 +54,7 @@ pnpm preview
 - [pinia-plugin-persistedstate](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/)
 - [Shadcn-vue](https://github.com/radix-vue/shadcn-vue)
 - [Vant](https://vant-ui.github.io/vant/#/zh-CN)
+- [Iconify](https://iconify.design/)
 - [TailwindCSS](https://tailwind.nodejs.cn/)
 - [TypeScript](https://www.tslang.cn/)
 - [ESLint](https://eslint.nodejs.cn/)

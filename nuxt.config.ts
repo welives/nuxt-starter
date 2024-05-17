@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
+    '@nuxt/ui',
     '@vueuse/nuxt',
     '@vite-pwa/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
