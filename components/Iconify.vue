@@ -1,19 +1,16 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
-import { cn } from '../lib'
+import { cn } from '../libs'
 interface Props {
-  iconName: string
+  name: string
   class?: HTMLAttributes['class']
 }
 defineOptions({
   name: 'Iconify',
 })
 const props = defineProps<Props>()
-const icon = computed(() => {
-  return props.iconName ? `icon-[${props.iconName}]` : ''
-})
 </script>
 
 <template>
-  <span :class="cn(icon, props.class)"></span>
+  <span :class="cn(props.name, props.class)"></span>
 </template>

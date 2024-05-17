@@ -5,9 +5,9 @@ import { appDescription } from './constants/index'
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
+    '@nuxt/ui',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxt/ui',
     '@vueuse/nuxt',
     '@vite-pwa/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
