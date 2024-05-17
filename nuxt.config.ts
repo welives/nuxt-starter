@@ -3,7 +3,6 @@ import { appDescription } from './constants/index'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
@@ -12,21 +11,15 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
     '@pinia-plugin-persistedstate/nuxt',
-    'shadcn-nuxt',
   ],
   imports: { dirs: ['./stores'] },
-  shadcn: {
-    prefix: '',
-    componentDir: './components/ui',
+  /** @see https://nuxt.com.cn/docs/guide/going-further/experimental-features 实验性功能 */
+  experimental: {
+    payloadExtraction: false, // 启用提取使用 nuxt generate 生成的页面的有效负载
+    renderJsonPayloads: true, // 允许渲染带有复杂类型的 JSON 载荷
+    typedPages: true, // 启用新的实验性类型化路由器，使用 unplugin-vue-router
   },
-  eslint: {
-    config: {
-      standalone: false,
-    },
-  },
-  colorMode: {
-    classSuffix: '',
-  },
+  /** @see https://nuxt.com.cn/docs/guide/directory-structure/server#nitro%E9%85%8D%E7%BD%AE */
   nitro: {
     esbuild: {
       options: {
@@ -39,6 +32,8 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    /** @see https://nuxt.com.cn/docs/getting-started/transitions#%E9%A1%B5%E9%9D%A2%E8%BF%87%E6%B8%A1 为所有页面添加过渡效果 */
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       viewport: 'width=device-width,initial-scale=1',
       link: [
@@ -56,4 +51,13 @@ export default defineNuxtConfig({
     },
   },
   pwa,
+  colorMode: {
+    classSuffix: '',
+  },
+  eslint: {
+    config: {
+      standalone: false,
+    },
+  },
+  devtools: { enabled: true },
 })

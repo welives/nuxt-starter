@@ -1,5 +1,5 @@
 <script setup>
-import { cn } from './lib'
+import { cn } from './libs'
 </script>
 
 <template>
