@@ -4,16 +4,17 @@ import { appDescription } from './constants/index'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
     '@vueuse/nuxt',
-    '@vite-pwa/nuxt',
+    '@nuxt/ui',
     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
     '@pinia-plugin-persistedstate/nuxt',
+    '@vite-pwa/nuxt',
+    '@nuxt/eslint',
   ],
   imports: { dirs: ['./stores'] },
+  ui: {
+    icons: ['lucide']
+  },
   /** @see https://nuxt.com.cn/docs/guide/going-further/experimental-features 实验性功能 */
   experimental: {
     payloadExtraction: false, // 启用提取使用 nuxt generate 生成的页面的有效负载
@@ -27,9 +28,9 @@ export default defineNuxtConfig({
         target: 'esnext',
       },
     },
+    /** @see https://nuxt.com.cn/docs/getting-started/deployment#%E9%80%89%E6%8B%A9%E6%80%A7%E9%A2%84%E6%B8%B2%E6%9F%93 */
     prerender: {
-      crawlLinks: false,
-      routes: ['/'],
+      crawlLinks: true,
     },
   },
   app: {

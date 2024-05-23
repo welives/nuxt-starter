@@ -8,7 +8,9 @@ interface Props {
 defineOptions({
   name: 'Iconify',
 })
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  class: 'w-5 h-5'
+})
 </script>
 
 <template>

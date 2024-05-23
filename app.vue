@@ -1,9 +1,11 @@
-<script setup>
-import { cn } from './libs'
+<script setup lang="ts">
 </script>
 
 <template>
-  <div :class="cn('debug-screens')">
-    <NuxtWelcome />
+  <VitePwaManifest />
+  <div class="debug-screens">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

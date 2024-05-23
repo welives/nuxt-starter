@@ -26,11 +26,6 @@
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit"
   },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.378.0",
-    "tailwind-merge": "^2.3.0"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.17.0",
     "@iconify-json/lucide": "^1.1.187",
@@ -43,12 +38,14 @@
     "@pinia/nuxt": "^0.5.1",
     "@vite-pwa/nuxt": "^0.7.0",
     "@vueuse/nuxt": "^10.9.0",
+    "clsx": "^2.1.1",
     "eslint": "^9.2.0",
     "eslint-plugin-format": "^0.1.1",
     "nuxt": "^3.11.2",
     "pinia": "^2.1.7",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwind-merge": "^2.3.0",
     "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.17"
