@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
   ],
-  imports: { dirs: ['./stores'] },
+  imports: { dirs: ['./store'] },
   ui: {
     icons: ['lucide']
   },
